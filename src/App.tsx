@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import TestUseCallback from "./components/TestUseCallback/TestUseCallback";
 import TestUseEffect from "./components/TestUseEffect/TestUseEffect";
+import TestUseLayoutEffect from "./components/TestUseLayoutEffect/TestUseLayoutEffect";
 import TestUseMemo from "./components/TestUseMemo/TestUseMemo";
 import TestUseRef from "./components/TestUseRef/TestUseRef";
 import HookTestingItem from "./schemas/HookTestingItem";
@@ -16,6 +17,11 @@ function App() {
 		{
 			name: TestUseEffect.name,
 			component: <TestUseEffect />,
+			active: false,
+		},
+		{
+			name: TestUseLayoutEffect.name,
+			component: <TestUseLayoutEffect />,
 			active: false,
 		},
 		{ name: TestUseMemo.name, component: <TestUseMemo />, active: false },
