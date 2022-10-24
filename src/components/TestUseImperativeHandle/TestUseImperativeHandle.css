@@ -1,0 +1,28 @@
+/* .TestUseImperativeHandle {} */
+.TestUseImperativeHandle .normal-text {
+    font-size: medium;
+    font-weight: normal;
+}
+
+.TestUseImperativeHandle .spaced,
+.FirstUseCaseComponentRender div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.FirstUseCaseComponentRender,
+.SecondUseCaseComponentRender {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.FirstUseCaseComponentRender h4:first-child,
+.SecondUseCaseComponentRender h4:first-child {
+    margin-top: 0rem;
+    padding-top: 0rem;
+}
