@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./App.css";
 import TestUseCallback from "./components/TestUseCallback/TestUseCallback";
+import TestUseContext from "./components/TestUseContext/TestUseContext";
 import TestUseEffect from "./components/TestUseEffect/TestUseEffect";
 import TestUseImperativeHandle from "./components/TestUseImperativeHandle/TestUseImperativeHandle";
 import TestUseLayoutEffect from "./components/TestUseLayoutEffect/TestUseLayoutEffect";
@@ -16,6 +17,11 @@ function App() {
             active: false,
         },
         {
+            name: TestUseContext.name,
+            component: <TestUseContext />,
+            active: true,
+        },
+        {
             name: TestUseEffect.name,
             component: <TestUseEffect />,
             active: false,
@@ -23,7 +29,7 @@ function App() {
         {
             name: TestUseImperativeHandle.name,
             component: <TestUseImperativeHandle />,
-            active: true,
+            active: false,
         },
         {
             name: TestUseLayoutEffect.name,
